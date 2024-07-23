@@ -1,0 +1,20 @@
+apiVersion: skaffold/v2beta2
+kind: Config
+deploy:
+  kubeContext: docker-desktop
+  kubectl:
+    manifests:
+      - ./infra/k8s/*
+build:
+  local:
+    push: false
+  artifacts:
+    - image: naseemahmad244/auth
+      context: auth
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - dest: .
+            src: 'src/*'
+  

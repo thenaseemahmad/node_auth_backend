@@ -1,0 +1,40 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-serv-getmyticket
+  annotations:
+    nginx.ingress.kubernetes.io/use-regex: 'true'
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: getmyticket.dev
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/api/users/currentuser"
+        backend:
+          service:
+            name: auth-serv
+            port: 
+              number: 4000
+      - pathType: Prefix
+        path: "/api/users/signup"
+        backend:
+          service:
+            name: auth-serv
+            port: 
+              number: 4000
+      - pathType: Prefix
+        path: "/api/users/signin"
+        backend:
+          service:
+            name: auth-serv
+            port: 
+              number: 4000
+      - pathType: Prefix
+        path: "/api/users/signout"
+        backend:
+          service:
+            name: auth-serv
+            port: 
+              number: 4000
