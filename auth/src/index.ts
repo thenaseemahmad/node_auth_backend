@@ -5,7 +5,7 @@ dotenv.config({ path: "../infra/k8s/.env" })
 
 const authPort = 4000;
 const jwtSecret = process.env.JWT_SECRET;
-const mongoDbUrl = process.env.MONGO_DB_URL
+const mongoDbUrl = process.env.MONGO_DB_URL_WITH_DBNAME;
 
 const start = async () => {
   if (!jwtSecret) {
