@@ -1,4 +1,3 @@
-```markdown
 # Auth backend service
 
 This authentication backend service can be used to signup, signin, or signout a given user using a users email, and password. This system uses Mongodb as a backend database service to persist the users data. It equipped with kubernetes deployment files so just add this project to your existing kuberneted infra folder and run few command and this would be good to go.
@@ -31,7 +30,6 @@ This is express server written in node.js. It has following routes
 
 - How to run the program
 - Step-by-step bullets
-```
 
 ```markdown
 ## Help
