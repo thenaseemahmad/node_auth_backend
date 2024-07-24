@@ -8,7 +8,9 @@ This authentication backend service can be used to signup, signin, or signout a 
 This is express server written in node.js. It has following routes
 
 1. [POST]api/users/signup
-   ![SIGNUP ROUTE](https://github.com/thenaseemahmad/node_auth_backend/blob/main/assets/Signup.PNG)
+<p align="center">
+  <img src="./assets/Signup.PNG" width="800px" alt="signup flow">
+</p>
 2. [POST]api/users/signin
 3. [POST]api/users/signout
 4. [GET]api/users/currentuser
