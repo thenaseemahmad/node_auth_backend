@@ -1,11 +1,17 @@
 ```markdown
-# Project Title
+# Auth backend service
 
-A brief description of what this project does and who it's for.
+This authentication backend service can be used to signup, signin, or signout a given user using a users email, and password. This system uses Mongodb as a backend database service to persist the users data. It equipped with kubernetes deployment files so just add this project to your existing kuberneted infra folder and run few command and this would be good to go.
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+This is express server written in node.js. It has following routes
+
+1. [POST]api/users/signup
+   ![SIGNUP ROUTE](./assets/Signup.PNG?raw=true 'Title')
+2. [POST]api/users/signin
+3. [POST]api/users/signout
+4. [GET]api/users/currentuser
 
 ## Getting Started
 
@@ -67,13 +73,3 @@ Inspiration, code snippets, etc.
 - [ _An external link was removed to protect your privacy._ /)
 - [ _An external link was removed to protect your privacy._ /)
 ```
-
-Feel free to customize this template to suit your project's needs. Remember to replace the placeholders with your actual data. Happy coding!
-
-A kubernetes based node backend to signup, signin, and signout a given user. This system is using mongodb to persist the data of the user. Following are the steps to use this system
-
-The easiest way to start this project is by using a local or cloud based kubernetes clustor as this repo contains all the necessory deployment files for kubernetes, Following are the steps that can be followed to start this service to your local docker-desktop clustor.
-
-1. The very first step is to install necessory tools to your local machine, Download and install following tools
-   1.1: Node:
-   1.2: Mongodb:
