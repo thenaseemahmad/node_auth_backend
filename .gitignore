@@ -1,3 +1,5 @@
 auth/node_modules
 infra/k8s/.env
 infra/k8s/system-secrets.yaml
+auth/src/routes/__test__
+auth/src/routes/test
